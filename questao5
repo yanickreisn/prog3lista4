@@ -1,0 +1,14 @@
+# Solicita ao usuário para inserir uma lista de números separados por espaço
+entrada = input("Digite uma lista de números inteiros separados por espaço: ")
+
+# Converte a string de entrada em uma lista de inteiros
+numeros = list(map(int, entrada.split()))
+
+# Solicita ao usuário para inserir o número específico a ser contado
+numero_especifico = int(input("Digite o número que deseja contar na lista: "))
+
+# Conta quantas vezes o número aparece na lista
+contagem = numeros.count(numero_especifico)
+
+# Exibe o resultado
+print(f'O número {numero_especifico} aparece {contagem} vez(es) na lista.')
