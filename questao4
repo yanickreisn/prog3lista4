@@ -1,0 +1,11 @@
+# Solicita ao usuário para inserir as palavras separadas por espaço
+entrada = input("Digite uma lista de palavras separadas por espaço: ")
+
+# Converte a string de entrada em uma lista de palavras
+palavras = entrada.split()
+
+# Inverte a lista
+palavras_invertidas = palavras[::-1]
+
+# Exibe a lista invertida
+print(f'A lista na ordem inversa é: {palavras_invertidas}')
