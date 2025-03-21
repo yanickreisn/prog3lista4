@@ -1,0 +1,13 @@
+# Solicita ao usuário para inserir os números separados por espaço
+entrada = input("Digite uma lista de números inteiros separados por espaço: ")
+
+# Converte a string de entrada em uma lista de inteiros
+numeros = list(map(int, entrada.split()))
+
+# Encontra o maior e o menor número da lista
+maior_numero = max(numeros)
+menor_numero = min(numeros)
+
+# Exibe os resultados
+print(f'O maior número é: {maior_numero}')
+print(f'O menor número é: {menor_numero}')
