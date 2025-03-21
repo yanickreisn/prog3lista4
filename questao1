@@ -1,0 +1,11 @@
+# Solicita ao usuário para inserir os números separados por espaço
+entrada = input("Digite uma lista de números inteiros separados por espaço: ")
+
+# Converte a string de entrada em uma lista de inteiros
+numeros = list(map(int, entrada.split()))
+
+# Calcula a soma de todos os elementos da lista
+soma = sum(numeros)
+
+# Exibe o resultado
+print(f'A soma dos elementos da lista é: {soma}')
