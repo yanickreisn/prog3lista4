@@ -1,0 +1,16 @@
+# Solicita ao usuário para inserir os números separados por espaço
+entrada = input("Digite uma lista de números inteiros separados por espaço: ")
+
+# Converte a string de entrada em uma lista de inteiros
+numeros = list(map(int, entrada.split()))
+
+# Cria uma lista para armazenar os números sem duplicatas
+numeros_sem_duplicatas = []
+
+# Adiciona um número à lista de resultado se ele não estiver presente
+for numero in numeros:
+    if numero not in numeros_sem_duplicatas:
+        numeros_sem_duplicatas.append(numero)
+
+# Exibe a lista sem duplicatas
+print(f'A lista sem duplicatas é: {numeros_sem_duplicatas}')
